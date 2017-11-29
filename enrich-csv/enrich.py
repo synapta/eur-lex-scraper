@@ -9,7 +9,7 @@ csv_file = 'test.csv'
 
 # Replace this with you dandelion api token. 
 # Register here: https://dandelion.eu/accounts/register/?next=/semantic-text/entity-extraction-demo/
-TOKEN = "4688681ade124a338ca8e9de3b07a548" 
+TOKEN = "" 
 
 # opens the csv file
 with open(csv_file, 'r') as f:
@@ -26,6 +26,7 @@ with open(csv_file, 'r') as f:
     
     print "We are processing this line:"
     print line
+    print
 
     print "This is the string we are going to enrich"
     print line['Title']
@@ -39,6 +40,7 @@ with open(csv_file, 'r') as f:
     # Printing only organizations
     for entity in returned_object['annotations']:
       if 'http://dbpedia.org/ontology/Organisation' in entity['types']:
-        print "Found: " + entity['label']
+        print ">>> Found: " + entity['label']
 
     print
+    print 
