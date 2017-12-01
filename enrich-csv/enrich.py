@@ -9,7 +9,7 @@ csv_file = 'test.csv'
 
 # Replace this with you dandelion api token. 
 # Register here: https://dandelion.eu/accounts/register/?next=/semantic-text/entity-extraction-demo/
-TOKEN = "" 
+TOKEN = "a123744963fa46c8bbb1664e7a83cfad" 
 
 # opens the csv file
 with open(csv_file, 'r') as f:
